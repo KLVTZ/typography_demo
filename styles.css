@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+
+General Styles
+
+*/
+
+body {
+	font-size: 1em /1.5em 'Droid Sans', sans-serif;   /*16px / 16px*/
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p,ul {
+	font-size: 1em; 	/* 16px / 16px */
+	line-height: 1.5em;  	/* 24px / 16px */
+	margin: 0 0 24px;
+}
+ 
+/*headings*/
+h2 {
+	font-family: 'Droid Serif', serif;
+	font-size: 2.375em; 		/* 38px / 16px */
+	line-height: 1.26315789em; 	/* 48px / 38px */
+	margin: 0 0 24px;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: 'Droid Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	border-bottom: 4px double #1d1d1d;
+	border-top: 4px double #1d1d1d;
+	padding: 4px 0;
+	margin-bottom: 8px;
+}
+
+/*blockquote*/ 
+blockquote {
+	font-size: 4.5em; /* 72px / 16px */
+	font-family: 'Droid Serif', serif;
+	line-height: 1em; /* 72px / 72px */
+	font-style: italic;
+	font-weight: 700;
+}
+
+.intro a {
+	margin: 24px 0 0 0px;
+	color: #1d1d1d;
+	font-weight: bold;
+	display: inline-block;
+	background: #1d1d1d;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.intro a span {
+	font-style: italic;
+	font-weight: normal;
+	padding: 0 0 0 0.5em;
+}
+
+/*layout*/
+
+h1.logo a {
+	width: 80px;
+	padding: 12px 10px;
+	background: #1d1d1d;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	height: 72px;
+}
+
+.wrapper,
+header,
+footer {
+	width: 940px;
+	margin: 0px auto;
+	padding: 0 10px 0 10px;
+	position: relative;
+}
+
+.wrapper_header {
+	border-top: 2px solid #1d1d1d;
+	margin: 22px 0 0 0;
+}
+
+header {
+	width: 940px;
+	margin: 0px auto;
+}
+
+section {
+	padding: 48px 0;
+}
+
+section.main {
+	border-top: 2px solid #1d1d1d;
+	padding-top: 46px;
+}
+
+section article {
+	width: 700px;
+	float:right;
+	-webkit-column-count:2;
+	-webkit-column-gap:20px;
+}
+
+section aside {
+	width:160px;
+	float left;
+}
+
+section::after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 100%;
+	visibility: hidden;
+}
+
+
+/*footer*/
+.wrapper_footer {
+	background: #1d1d1d;
+}
+
+footer {
+	color: #fff;
+	padding: 24px 0 48px 0;
+}
+
+footer::after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 100%;
+	visibility: hidden;
+}
+
+footer ul {
+	width: 220px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+footer ul:last-child {
+	margin-right: 0;
+}
+
+/*search*/
+input[type=text] {
+	height: 22px;
+	border: 1px solid #1d1d1d;
+	position: absolute;
+	top: 48px;
+	right: 10px;
+	padding: 0 4px;
+	width: 90px;
+	font: 11px/24px 'PT Serif', serif;
+	letter-spacing: 0.1em;
+	font-style: italic;
+
+-webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	 -o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+}
+
+input[type=text]:focus {
+	outline: none;
+	width: 150px;
+	font-size: 14px;
+}
+
+input::-webkit-input-placeholder {
+	color: #1d1d1d;
+}
+
+input::-moz-input-placeholder {
+	color: #1d1d1d;
+}
