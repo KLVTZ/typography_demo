@@ -8,4 +8,6 @@ The following is a simple typography demo that demonstrates the use of relative 
 
 ![Demo](http://i.imgur.com/LOIeQfL.jpg "Demo")
 
+*Design and learning via tutsplus
+
 
